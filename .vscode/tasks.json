@@ -1,0 +1,27 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: gcc.exe build active file",
+			"command": "C:\\Program Files\\mingw32\\bin\\gcc.exe",
+			"args": [
+				"${workspaceFolder}/*.c", // Adjust this to point to your source files
+                "-o",
+                "${workspaceFolder}/output_executable", // Replace with your desired output name
+                "-lws2_32"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compiler: C:\\Program Files\\mingw32\\bin\\gcc.exe"
+		}
+	]
+}
